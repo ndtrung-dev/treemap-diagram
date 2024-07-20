@@ -1,0 +1,72 @@
+.screen,
+.main,#chart-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+html {
+  background-color: #f99;
+}
+
+.screen {
+  width: 100%;
+  min-height: 100vh;
+
+  padding: 3rem 2rem;
+}
+
+.main {
+  background-color: white;
+  padding: 2rem 5rem;
+  border-radius: 3rem;
+  color: black;
+}
+
+#database-selector {
+  display: flex;
+  gap: 1rem;
+}
+.button {
+  padding: 0.4rem 1rem;
+  background-color: #f99;
+  border-radius: 2rem;
+  color: white;
+  cursor: pointer;
+}
+.button:disabled {
+  cursor: not-allowed;
+}
+#chart-wrapper {
+  width: fit-content;
+}
+
+.button,
+#title {
+  text-transform: capitalize;
+}
+
+.tile {
+  filter: brightness(98%);
+}
+.tile.active {
+  filter: brightness(105%);
+}
+
+#tooltip {
+  position: absolute;
+  width: fit-content;
+  max-width: 15rem;
+  display: none;
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f99;
+  color: white;
+}
+#tooltip.active {
+  display: flex !important;
+}
